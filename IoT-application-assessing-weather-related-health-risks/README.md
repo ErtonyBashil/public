@@ -134,16 +134,22 @@ def handle_dht11_data(cloud_event):
   errors = bq_client.insert_rows_json(table_id, rows_to_insert)
   if errors:
     print(f"Encountered errors while inserting rows: {errors}")
-    ```
+   
+  ```
+   
+   ![](./files/humidity_sensor.png)
+   
+   Après la configuration de la fonction, quand on exécute le script, j’ai reçu ce résultat
     
-    
+   ![](./files/result_captured.png)
+   
+   
+   <h2>Analytique descriptive avec Looker Studio  </h3>
 
-
-
-
-
-
-
-
-
+   
+   Looker Studio : permet la création et le partage de tableaux de bord et de rapport. Il sera utilisé pour 
+la visualisation et l’exploration des données météorologiques. 
+Looker Studio, anciennement Data Studio, est l’outil de reporting gratuit de Google. Celui-ci permet de 
+visualiser facilement des données puis de créer des graphiques et tableaux personnalisables. Sur la 
+plateforme https://lookerstudio.google.com/u/0/
 
