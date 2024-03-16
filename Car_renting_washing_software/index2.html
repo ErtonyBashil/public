@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Booking Form HTML Template</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	
+
+</head>
+
+<body>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<form action="./Verification/authentication.php" method="post">
+							<div class="form-group">
+								<div class="form-checkbox">
+									<label for="multi-city">	
+									CONNECTEZ-VOUS
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<span class="form-label">Nom</span>
+										<input class="form-control" type="text" placeholder="Entrez votre nom ici" name = "nom">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<span class="form-label">Prenom</span>
+										<input class="form-control" type="text" placeholder="Entrez votre prenom ici" name = "prenom">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">CODE EMPLOYE</span>
+										<input class="form-control" type="text" name = "matricule" required>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">MOT DE PASSE</span>
+										<input class="form-control" type="password" name = "password" required>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-btn">
+										
+										<input type="submit" value="Verifier" class="submit-btn" >
+									</div>
+								</div>
+                                <div class="col-md-6">
+									<div class="form-btn">
+                                           <font size color = red ><b>Cordonnées incorrectes, veuillez reessayer</b> </font>
+									</div>
+								</div>
+							</div>
+                        
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
